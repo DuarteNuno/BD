@@ -1,0 +1,1 @@
+select COUNT(DISTINCT City) from CUSTOMER;

@@ -1,0 +1,1 @@
+SELECT CustomerId, SUM(Charge) FROM STREAM GROUP BY CustomerId HAVING SUM(Charge)<=100 ORDER BY SUM(Charge) DESC, CustomerId;

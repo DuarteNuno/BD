@@ -1,0 +1,1 @@
+select sum(charge) from STREAM where Year(streamDate)=2018

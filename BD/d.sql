@@ -1,0 +1,1 @@
+select Min(Charge),MAX(Charge),AVG(Charge),Sum(Charge) from STREAM where year(StreamDate)=2017;

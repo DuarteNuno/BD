@@ -1,0 +1,1 @@
+select name, city, country from CUSTOMER where Name like 'Ch%'

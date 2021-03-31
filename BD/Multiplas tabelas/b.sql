@@ -1,0 +1,1 @@
+select REGION.Name, COUNT(COUNTRY.RegionId) as x from REGION  join COUNTRY on (REGION.RegionId = COUNTRY.RegionId) group by Name order by x;

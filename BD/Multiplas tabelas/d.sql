@@ -1,0 +1,1 @@
+select MOVIE.Title from MOVIE join MOVIE_ACTOR on (MOVIE.MovieId = MOVIE_ACTOR.MovieId) join ACTOR on (ACTOR.ActorId = MOVIE_ACTOR.ActorId) where ACTOR.Name = 'Tom Cruise' order by Title;

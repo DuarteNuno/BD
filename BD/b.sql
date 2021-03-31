@@ -1,0 +1,1 @@
+select AVG(Duration) as Avg_Dur from MOVIE where Year >= 2000;
