@@ -1,0 +1,1 @@
+SELECT Hour(StreamDate), COUNT(*) FROM STREAM GROUP BY Hour(StreamDate); 

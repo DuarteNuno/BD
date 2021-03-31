@@ -1,0 +1,8 @@
+select MOVIE.Title, COUNT(*) as N
+from MOVIE
+JOIN MOVIE_GENRE
+ON(MOVIE.MovieId=MOVIE_GENRE.MovieId)
+JOIN GENRE 
+ON(MOVIE_GENRE.GenreId=GENRE.GenreId)
+GROUP BY MOVIE.Title
+having N >=3;

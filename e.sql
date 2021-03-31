@@ -1,0 +1,1 @@
+select ACTOR.Name, COUNT(MOVIE_ACTOR.MovieId) from ACTOR natural join MOVIE_ACTOR natural join MOVIE group by ACTOR.Name order by COUNT(MOVIE_ACTOR.MovieId) desc, Name limit 20;

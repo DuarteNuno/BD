@@ -1,0 +1,1 @@
+select title,year from  MOVIE where Duration >=180

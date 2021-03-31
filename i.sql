@@ -1,0 +1,1 @@
+SELECT Year(StreamDate),Month(StreamDate),SUM(Charge) FROM STREAM GROUP BY Year(StreamDate),Month(StreamDate);

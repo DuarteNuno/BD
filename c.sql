@@ -1,0 +1,1 @@
+SELECT DISTINCT CUSTOMER.Name, MAX(STREAM.Charge) from CUSTOMER join STREAM ON(CUSTOMER.CustomerId = STREAM.CustomerId) where (Year(STREAM.StreamDate) = 2018 AND CUSTOMER.Country = 'United States') group by Name order by MAX(STREAM.Charge) desc,CUSTOMER.Name;

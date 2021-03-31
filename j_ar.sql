@@ -1,0 +1,6 @@
+select REGION.Name,Count(*) 
+from REGION JOIN COUNTRY 
+USING (RegionId) 
+JOIN CUSTOMER 
+ON COUNTRY.Name=CUSTOMER.Country 
+GROUP BY REGION.Name 

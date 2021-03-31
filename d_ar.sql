@@ -1,0 +1,1 @@
+select Year(StreamDate),count(*),sum(charge) from STREAM
